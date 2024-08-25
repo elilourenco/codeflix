@@ -1,4 +1,4 @@
-import { useScroll } from "@/hooks/useScroll";
+import { useScroll } from "@/app/hooks/useScroll";
 import { describe } from "node:test";
 
 import {renderHook,act} from '@testing-library/react'

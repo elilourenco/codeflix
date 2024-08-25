@@ -4,7 +4,7 @@
 import { Userprofile } from "./Userprofile";
 import { NavLinks } from "./NavLinks";
 import { Logo } from "./Logo";
-import { useScroll } from "../../hooks/useScroll";
+import { useScroll } from "../hooks/useScroll";
 
 export default function Header(){
     const isScrolled= useScroll() ;

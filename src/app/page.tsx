@@ -9,7 +9,7 @@ export default function Home() {
       <main className="relative pb-24 pl-4  lg:pl-16">
 
         <Banner/>
-        <MovieRow sectionTitle="Trending Now" />
+        <MovieRow sectionTitle="Trending Now"/>
         <MovieRow sectionTitle="Top Rated" />
         <MovieRow sectionTitle="Action Movies" />
         
