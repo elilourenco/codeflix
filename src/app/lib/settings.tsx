@@ -9,9 +9,30 @@
                 language:'en'
             })
             
-        },2000);
+        },5000);
         
     });
+
+ }
+
+
+ export const getUserInfo =():Promise <{
+    name:string,
+    email:string,
+    age: number,
+
+ }> =>{
+
+    return new Promise((resolve) =>{
+        setTimeout(() => {
+            resolve({
+                name:'john Doe',
+                email:'john@.com',
+                age:30,
+            })
+            
+        }, 1000);
+    })
 
  }
 

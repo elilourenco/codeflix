@@ -10,12 +10,9 @@ type MovieCardprops={
 const MovieCard =({index}:MovieCardprops)=>(
 
   <div key={index} 
-    className="group relative h-28 min-w-[200px]  transform bg-gradient-to-t
-      cursor-pointer rounded
-     to-black
-      from-transparent
-      transition duration-200 ease-in  hover:scale-110 hover:z-50
-      md:h-40 md:min-w-[300px] lg:h-52 lg:min-w-[400px]">
+    className="group relative h-28 min-w-[200px] bg-gradient-to-t cursor-pointer rounded
+     to-black from-transparent transition-transform duration-200 ease-out    hover:opacity-100
+      md:h-36 md:min-w-[260px] lg:h-52 lg:min-w-[260px] md:hover:scale-100">
     <Image
       src={`/item_${index}.png`}
       fill={true}
