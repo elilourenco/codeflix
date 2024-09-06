@@ -1,12 +1,12 @@
 'use client'
 
 import React from "react";
-import { InputField } from "../InputField";
+import { InputField } from "../../components/InputField";
 
-export function LoginForm() {
+export function RegisterForm() {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        console.log('submit');
+        alert('submit from registrar');
         e.preventDefault();
     };
     return (
@@ -17,12 +17,12 @@ export function LoginForm() {
 
             <div className="flex flex-col items-center space-y-4">
                 <h1 className="text-3xl font-bold">
-                    Login
+                    Register
                 </h1>
                 <p className="text-sm text-gray-500">
-                    New to the app? {''}
+                    Already have an account? {''}
                     <a href="#" className="text-red-500 hover:underline">
-                        Register
+                        Login
                     </a>
                 </p>
 
@@ -42,6 +42,15 @@ export function LoginForm() {
                     label="Password"
                     placeholder="Enter your password" />
 
+                <InputField
+                    id="password"
+                    name="password"
+                    type="password"
+                    label="Password"
+                    placeholder="Enter your password"
+                />                    
+
+
             </div>
             <div className="flex flex-col-reverse space-y-2 pt-2 sm:flex-row sm:space-x-2 sm:space-y-0">
                 <button
@@ -49,7 +58,7 @@ export function LoginForm() {
                      hover:bg-red-600 px-4 py-2 text-sm font-semibold text-white sm:w-auto"
                     type="submit">
 
-                    Login
+                    Register
                 </button>
             </div>
 
