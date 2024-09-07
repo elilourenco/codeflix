@@ -43,22 +43,32 @@ export const AuthForm:React.FC<AuthFormProps>=({formType,onSubmit}) =>{
 
             <InputField
                 id="password"
-                    name="email"
-                    type="email"
-                    label="Email"
-                    placeholder="Enter your email" 
+                    name="password"
+                    type="password"
+                    label="password"
+                    placeholder="Enter your password" 
             />
 
             {formType === 'register' && (
                 <InputField
-                id="confirmpassword"
+                id="confirmPassword"
                 name="password"
                 type="password"
                 label="Confirm Password"
-                placeholder="Enter your email" />
+                placeholder="Confirm your password" />
 
             )}
 
+        </div>
+
+        <div className="flex flex-col-reverse space-y-2 pt-2 sm:flex-row sm:space-x-2 sm:space-y-0">
+            <button
+                className="flex w-full items-center justify-center rounded-lg bg-red-500
+                     hover:bg-red-600 px-4 py-2 text-sm font-semibold text-white sm:w-auto"
+                type="submit">
+
+                {formType === 'login' ? 'Login' :'Register'}
+            </button>
         </div>
 
         </form>
