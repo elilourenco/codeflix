@@ -31,9 +31,9 @@ const MovieCard =({movie}:{movie:Movie})=>(
     
         src={movie.bannerFileURL}
         alt={movie.title}
-        width={200}
-        height={200}
-        className="rounded-md object-cover object-top transition"
+        width={600}
+        height={400}
+        className="duration h-[12vw] w-full cursor-pointer rounded-t-md  object-cover object-top shadow-xl transition"
       />
     <div className="absolute z-10 w-full rounded-b-md bg-zinc-800 p-2 shadow-md transition lg:p-4">
       <div className="flex flex-row  items-center justify-between gap-2">
@@ -61,7 +61,7 @@ const MovieCard =({movie}:{movie:Movie})=>(
             transition hover:bg-neutral-300 hover:text-black lg:h-10 lg:w-10
           ">
             <Link href={`/watch/${movie.id}`}>
-            <PlusIcon className="w-6 lg:w-6"/>
+            <PlusIcon className="w-4 lg:w-6"/>
             </Link>
 
           </div> 
