@@ -28,10 +28,11 @@ const MovieCard =({movie}:{movie:Movie})=>(
      group-hover:scale-110 group-hover:opacity-100 sm:visible">
       
       <Image
-        alt={movie.title}
+    
         src={movie.bannerFileURL}
-        width={600}
-        height={400}
+        alt={movie.title}
+        width={200}
+        height={200}
         className="rounded-md object-cover object-top transition"
       />
     <div className="absolute z-10 w-full rounded-b-md bg-zinc-800 p-2 shadow-md transition lg:p-4">
@@ -47,11 +48,11 @@ const MovieCard =({movie}:{movie:Movie})=>(
           hover:text-black lg:h-10 lg:w-10
           ">
             <Link href={`/watch/${movie.id}`}>
-            <PlayIcon className="w-4 lg:w-6"/>
+            <PlayIcon className="w-4 lg:w-4"/>
             </Link>
 
           </div>
-          <div className="flex h-6 w-6 
+          <div className="flex h-4 w-4 
             cursor-pointer 
             items-center 
             justify-center 
@@ -60,20 +61,21 @@ const MovieCard =({movie}:{movie:Movie})=>(
             transition hover:bg-neutral-300 hover:text-black lg:h-10 lg:w-10
           ">
             <Link href={`/watch/${movie.id}`}>
-            <PlusIcon className="w-4 lg:w-6"/>
+            <PlusIcon className="w-6 lg:w-6"/>
             </Link>
 
           </div> 
-          <div className="flex h-6 w-6 
+          
+          <div className="flex h-6 w-6
           cursor-pointer 
           items-center 
           justify-center 
           rounded-full 
           bg-transparent
-          transition hover:bg-neutral-300 hover:text-black lg:h-10 lg:w-10
+          transition hover:bg-neutral-300 hover:text-black lg:h-5 lg:w-5
           ">
           <Link href={`/watch/${movie.id}`}>
-          <ChevronDownIcon className="w-4 lg:w-6"/>
+          <ChevronDownIcon className="w-6 lg:w-6"/>
           </Link>
 
           </div>
@@ -83,11 +85,11 @@ const MovieCard =({movie}:{movie:Movie})=>(
         </div>
         <div className="mt-4 flex flex-col gap-2 text-sm">
           <div className="flex flex-row items-center gap-2">
-            <SpeakerWaveIcon className="w-4" />Double Atmos 5.1 4K
+            <SpeakerWaveIcon className="w-6"/>Double Atmos 5.1 4K
 
           </div>
           <div className="flex flex-row items-center gap-2">
-            <UserGroupIcon className="w-4"/> 4K+HDR
+            <UserGroupIcon className="w-6"/> 4K+HDR
           </div>
 
         </div>

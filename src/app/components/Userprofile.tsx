@@ -4,7 +4,7 @@ import React from "react";
 
 export const Userprofile = () => (
     <div className="flex items-center space-x-4">
-        <p className="hidden cursor-not-allowed lg:inline"> Kids</p>
+        <p className="hidden cursor-not-allowed lg:inline">Kids</p>
         <Image
             src='/profile.png'
             alt="user-profile"
