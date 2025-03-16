@@ -1,5 +1,6 @@
 'use client'
 
+
 import React from "react"
 import { InputField } from "./InputField";
 type AuthFormProps ={
@@ -55,7 +56,7 @@ export const AuthForm:React.FC<AuthFormProps>=({formType,onSubmit}) =>{
                 name="password"
                 type="password"
                 label="Confirm Password"
-                placeholder="Confirm your password" />
+                placeholder="Confirm your password"/>
 
             )}
 

@@ -55,8 +55,8 @@ export function Banner({movie}:{movie:Movie}) {
          md:py-2.5
         ">
            
-              <PlayIcon className="h-6" />
-              Play
+          <PlayIcon className="h-6" />
+          Play
             
         </button>
         </Link>
