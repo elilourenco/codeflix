@@ -5,13 +5,12 @@ import { Userprofile } from "./Userprofile";
 import { NavLinks } from "./NavLinks";
 import { Logo } from "./Logo";
 import { useScroll } from "../hooks/useScroll";
-import { MagnifyingGlassCircleIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import {  MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
 export default function Header(){
     const isScrolled= useScroll() ;
     const [searchTerm,setSearchTerm] = React.useState('');
-
 
 
     const onSearchTermChange=(event: React.ChangeEvent<HTMLInputElement>) =>{
